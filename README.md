@@ -15,10 +15,10 @@ pip install mcp httpx pydantic
 python test_autotask_connection.py
 ```
 
-**Enter your credentials:**
-- Username: `gfor6z5mfke3noz@SONDELASANDBOX.COM`
-- Secret: `a#0J8dR*b$1G@Se9Hm2~#5Ffx`
-- Integration Code: `F4VQQ6DDIBA5I7GTRDQ3AXKEHCH`
+**Enter your credentials:**  (You need to enter your own credentials )
+- Username: `username@domain.com`
+- Secret: `1234567890`
+- Integration Code: `12345678`
 - API URL: `https://webservices2.autotask.net/ATServicesRest/v1.0`
 
 **Expected result:**
@@ -48,10 +48,10 @@ python test_autotask_connection.py
       "command": "python",
       "args": ["/FULL/PATH/TO/autotask_mcp.py"],
       "env": {
-        "AUTOTASK_USERNAME": "gfor6z5mfke3noz@SONDELASANDBOX.COM",
-        "AUTOTASK_SECRET": "a#0J8dR*b$1G@Se9Hm2~#5Ffx",
-        "AUTOTASK_INTEGRATION_CODE": "F4VQQ6DDIBA5I7GTRDQ3AXKEHCH",
-        "AUTOTASK_API_URL": "https://webservices2.autotask.net/ATServicesRest/v1.0"
+     "AUTOTASK_USERNAME": "your-username@company.com",
+        "AUTOTASK_SECRET": "your-api-secret-here",
+        "AUTOTASK_INTEGRATION_CODE": "your-integration-code-here",
+        "AUTOTASK_API_URL": "https://webservices5.autotask.net/ATServicesRest/v1.0"
       }
     }
   }
@@ -139,7 +139,7 @@ Try these in Claude:
 3. ✅ Configure Claude Desktop
 4. ✅ Start managing Autotask with Claude!
 
-**Questions?** Check the README.md for detailed help.
+**Questions?** Check the README.md for detailed help or contact us at support@sondelaconsulting.com
 
 **Issues?** The test script will tell you exactly what's wrong.
 
