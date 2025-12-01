@@ -27,7 +27,6 @@ from mcp.server.fastmcp import FastMCP
 mcp = FastMCP(
     "autotask_mcp",
     stateless_http=True,
-    json_response=True,
 )
 
 # =============================================================================
@@ -869,4 +868,5 @@ if __name__ == "__main__":
         transport="streamable-http",
         host="0.0.0.0",
         port=int(os.getenv("PORT", "8000")),
+        path="/mcp",
     )
