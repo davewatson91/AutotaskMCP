@@ -24,7 +24,11 @@ from pydantic import BaseModel, Field
 from mcp.server.fastmcp import FastMCP
 
 # Initialize MCP server
-mcp = FastMCP("autotask")
+mcp = FastMCP(
+    "autotask_mcp",
+    stateless_http=True,
+    json_response=True,
+)
 
 # =============================================================================
 # CONFIGURATION
@@ -861,4 +865,8 @@ if __name__ == "__main__":
         print("  - AUTOTASK_INTEGRATION_CODE")
         print("  - AUTOTASK_API_URL (optional, defaults to webservices16)")
     
-    mcp.run()
+    mcp.run(
+        transport="streamable-http",
+        host="0.0.0.0",
+        port=int(os.getenv("PORT", "8000")),
+    )
